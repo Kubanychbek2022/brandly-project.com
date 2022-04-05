@@ -1,0 +1,31 @@
+@import "vars";
+
+.header__menu {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.header__item + .header__item {
+  margin-left: 53px;
+}
+
+.header__link {
+  font-family: $secondary-font;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 18px;
+text-transform: capitalize;
+color: $accent;
+text-decoration: none;
+transition: 1s;
+
+&:hover {
+  color: lighten($accent, 20%);
+  font-size: 28px;
+}
+
+}

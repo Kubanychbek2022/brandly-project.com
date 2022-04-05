@@ -1,0 +1,47 @@
+@import "vars";
+
+.categories__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 30px;
+}
+
+.categories__item {
+  width: 350px;
+min-height: 419px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.categories-men {
+  background-image: url(../img/men.jpg);
+}
+
+.categories-women {
+  background-image: url(../img/women.jpg)
+}
+
+.categories-accessories {
+  background-image: url(../img/accessories.jpg);
+}
+
+.categories__link {
+  font-family: $secondary-font;
+font-style: italic;
+font-weight: 300;
+font-size: 40px;
+line-height: 40px;
+text-transform: capitalize;
+color: $light;
+text-decoration: none;
+transition: all 1s;
+
+&:hover {
+  color: $accent;
+}
+
+}
